@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fira+Sans+Extra+Condensed:ital,wght@1,800&family=Fira+Sans:wght@900&family=Pacifico&family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <title>PsychoHealth</title>
+</head>
+<body>
+    
+
+    <div class="fundo"><img src="assets/img/fundo1.png" alt="Fundo" width="1864px" height="850px"></div>
+    <div class="pensamentos"><img src="assets/img/pensamentoalinhado.png" alt="Imagem sobre pensamentos"></div>
+    <div class="mantenha"><p>Mantenha sua<br>saúde mental</p></div>
+    <div class="fundo2"><img src="assets/img/fundo2.png" alt="Fundo" width="1864px" height="750px"></div>
+    <img class="texto" src="assets/img/textinho.png" alt="Texto">
+    <img class="fundo3" src="assets/img/fundo3.png" alt="Fundo" width="1864px" height="650px">
+    <img class="fec" src="assets/img/forcaeconforto.png" alt="Imagem de conforto" width="1400px">
+    <button class="button2" onclick="scrollDown()">Saiba mais</button>
+    <button class="button3" onclick="scrollDown2()">Saiba mais</button>
+    
+    <script>
+    function scrollDown() {
+    // Determinar a quantidade de rolagem desejada
+    var scrollAmount = 620; // ajuste esse valor conforme necessário
+
+    // Executar a rolagem suave para baixo
+    window.scrollBy({
+    top: scrollAmount,
+    left: 0,
+    behavior: 'smooth'
+    });
+    }
+
+    function scrollDown2() {
+    // Determinar a quantidade de rolagem desejada
+    var scrollAmount = 700; // ajuste esse valor conforme necessário
+
+    // Executar a rolagem suave para baixo
+    window.scrollBy({
+    top: scrollAmount,
+    left: 0,
+    behavior: 'smooth'
+    });
+    }
+
+    function redirecionar() {
+    window.location.href = "index.html";
+    }
+    </script>
+        
+
+    <div class="menu">
+        <img class="logo" src="assets/img/logo.png" alt="Logo" width="340px" onclick="redirecionar()">
+
+        <a href="habitos.html">Hábitos</a>
+        <a href="desabafe.html">Desabafe</a>
+        <a href="sintomas.html">Sintomas</a>
+        <a id="item-select" href="index.html">Início</a>
+        
+    </div>
+
+    <footer>
+        <img id="rodape"r src="assets/img/rodapé.png" alt="Rodapé">
+    </footer>
+</body>
+</html>

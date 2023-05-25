@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <link rel="stylesheet" href="assets/css/textarea-estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Fira+Sans+Extra+Condensed:ital,wght@1,800&family=Fira+Sans:wght@900&family=Pacifico&family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <title>PsychoHealth</title>
+</head>
+<body style="background-color:#D8B3A2;">
+
+    <div class="anom">
+        <p>Seu desabafo é anônimo</p>
+    </div>
+
+    <div class="titulo">
+        <input type="text" placeholder="Título">
+    </div>
+    <div class="desabafe">
+        <textarea placeholder="Desabafe aqui..." cols="29" rows="10"></textarea>
+    </div>
+
+    <div class="publicar">
+        <img src="assets/img/publicar.png" alt="Publicar" width="300px" onclick="mostrarPopup()">
+    </div>
+    <div class="veroutras">
+        <img src="assets/img/veroutros.png" alt="Ver outras" width="550px" onclick="alerta()">
+    </div>
+
+    <div id="meuPopup" class="popup">
+        <div class="popup-conteudo">
+          <h3>PUBLICADO COM SUCESSO!</h3>
+          <p>Clique no botão "Ver desabafos" se você quiser ler histórias de outras pessoas, se não, já pode fechar este popup!</p>
+          <br>
+          <button id="fechar" onclick="fecharPopup()">Fechar</button>
+          <button id="ver" onclick="alerta()">Ver desabafos</button>
+        </div>
+    </div>
+
+    <script>
+        function alerta() {
+            alert ("Esta página ainda será desenvolvida.")
+        }
+
+        function mostrarPopup() {
+        event.preventDefault();
+        document.getElementById("meuPopup").style.display = "block";
+        }
+
+        function fecharPopup() {
+        document.getElementById("meuPopup").style.display = "none";
+        }
+    </script>
+
+    <div class="menu">
+        <img class="logo" src="assets/img/logo.png" alt="Logo" width="340px" onclick="redirecionar()">
+
+        <a href="habitos.html">Hábitos</a>
+        <a id="item-select" href="desabafe.html">Desabafe</a>
+        <a href="sintomas.html">Sintomas</a>
+        <a href="index.html">Início</a>
+        
+    </div>
+    <script>
+    function redirecionar() {
+    window.location.href = "index.html";
+    }
+    </script>
+</body>
+</html>
