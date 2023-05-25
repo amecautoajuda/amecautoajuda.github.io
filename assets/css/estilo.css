@@ -62,6 +62,7 @@ a:hover{
 }
 .logo{
     cursor:pointer;
+    margin-left: 30px;
 }
 .button2{
     position:absolute;
@@ -92,7 +93,7 @@ a:hover{
 }
 .texto{
     position:absolute;
-    top:970px;
+    top:950px;
     left:25%;
 }
 .button3{
